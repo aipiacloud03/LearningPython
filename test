@@ -1,3 +1,61 @@
 # This program prints Hello, world!
 
 print('Hello, world!')
+
+# Additional Python code examples
+
+# Variables and Data Types
+name = "Alice"
+age = 25
+height = 5.7
+is_student = True
+
+print(f"Name: {name}, Age: {age}, Height: {height}, Student: {is_student}")
+
+# Lists and Loops
+fruits = ["apple", "banana", "orange", "grape"]
+for fruit in fruits:
+    print(f"Fruit: {fruit}")
+
+# Dictionary
+person = {
+    "name": "Bob",
+    "age": 30,
+    "city": "New York"
+}
+
+print(f"Person: {person}")
+print(f"Name: {person['name']}, Age: {person['age']}")
+
+# Functions
+def greet(name, greeting="Hello"):
+    return f"{greeting}, {name}!"
+
+print(greet("Charlie"))
+print(greet("Diana", "Hi"))
+
+# Conditional Statements
+score = 85
+
+if score >= 90:
+    print("Grade: A")
+elif score >= 80:
+    print("Grade: B")
+elif score >= 70:
+    print("Grade: C")
+else:
+    print("Grade: F")
+
+# List Comprehension
+numbers = [1, 2, 3, 4, 5]
+squared = [x**2 for x in numbers]
+print(f"Squared numbers: {squared}")
+
+# Exception Handling
+try:
+    result = 10 / 2
+    print(f"Result: {result}")
+except ZeroDivisionError:
+    print("Cannot divide by zero!")
+finally:
+    print("Calculation complete.")
